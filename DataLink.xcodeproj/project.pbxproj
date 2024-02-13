@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0597E8415EB4E53D5C1506D9 /* Pods_DataLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B906ED15D5899554F8C12D /* Pods_DataLink.framework */; };
 		3308C99F2B7B6C7D00DB5A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308C99E2B7B6C7D00DB5A1F /* AppDelegate.swift */; };
 		3308C9A12B7B6C7D00DB5A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308C9A02B7B6C7D00DB5A1F /* SceneDelegate.swift */; };
 		3308C9A32B7B6C7D00DB5A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308C9A22B7B6C7D00DB5A1F /* ViewController.swift */; };
 		3308C9A62B7B6C7D00DB5A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3308C9A42B7B6C7D00DB5A1F /* Main.storyboard */; };
 		3308C9A82B7B6C7F00DB5A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3308C9A72B7B6C7F00DB5A1F /* Assets.xcassets */; };
 		3308C9AB2B7B6C7F00DB5A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3308C9A92B7B6C7F00DB5A1F /* LaunchScreen.storyboard */; };
+		3308C9B52B7B791300DB5A1F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3308C9B42B7B791300DB5A1F /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3308C9A72B7B6C7F00DB5A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3308C9AA2B7B6C7F00DB5A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3308C9AC2B7B6C7F00DB5A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3308C9B42B7B791300DB5A1F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4E745C82A0D254E8A755A513 /* Pods-DataLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataLink.release.xcconfig"; path = "Target Support Files/Pods-DataLink/Pods-DataLink.release.xcconfig"; sourceTree = "<group>"; };
+		55F4E0F1190ED13453277435 /* Pods-DataLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataLink.debug.xcconfig"; path = "Target Support Files/Pods-DataLink/Pods-DataLink.debug.xcconfig"; sourceTree = "<group>"; };
+		68B906ED15D5899554F8C12D /* Pods_DataLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0597E8415EB4E53D5C1506D9 /* Pods_DataLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27B89FD7BC951A32866A8181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68B906ED15D5899554F8C12D /* Pods_DataLink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3308C9922B7B6C7D00DB5A1F = {
 			isa = PBXGroup;
 			children = (
+				3308C9B42B7B791300DB5A1F /* .swiftlint.yml */,
 				3308C99D2B7B6C7D00DB5A1F /* DataLink */,
 				3308C99C2B7B6C7D00DB5A1F /* Products */,
+				B1F1C538902477F392F40AD3 /* Pods */,
+				27B89FD7BC951A32866A8181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,15 @@
 			path = DataLink;
 			sourceTree = "<group>";
 		};
+		B1F1C538902477F392F40AD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F4E0F1190ED13453277435 /* Pods-DataLink.debug.xcconfig */,
+				4E745C82A0D254E8A755A513 /* Pods-DataLink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3308C9AF2B7B6C7F00DB5A1F /* Build configuration list for PBXNativeTarget "DataLink" */;
 			buildPhases = (
+				6DFB4C148F8F2E7952E19D00 /* [CP] Check Pods Manifest.lock */,
 				3308C9972B7B6C7D00DB5A1F /* Sources */,
 				3308C9982B7B6C7D00DB5A1F /* Frameworks */,
 				3308C9992B7B6C7D00DB5A1F /* Resources */,
+				3308C9B32B7B763600DB5A1F /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3308C9B52B7B791300DB5A1F /* .swiftlint.yml in Resources */,
 				3308C9AB2B7B6C7F00DB5A1F /* LaunchScreen.storyboard in Resources */,
 				3308C9A82B7B6C7F00DB5A1F /* Assets.xcassets in Resources */,
 				3308C9A62B7B6C7D00DB5A1F /* Main.storyboard in Resources */,
@@ -132,6 +162,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3308C9B32B7B763600DB5A1F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		6DFB4C148F8F2E7952E19D00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataLink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3308C9972B7B6C7D00DB5A1F /* Sources */ = {
@@ -203,7 +276,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -218,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,6 +360,7 @@
 		};
 		3308C9B02B7B6C7F00DB5A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F4E0F1190ED13453277435 /* Pods-DataLink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +393,7 @@
 		};
 		3308C9B12B7B6C7F00DB5A1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E745C82A0D254E8A755A513 /* Pods-DataLink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
